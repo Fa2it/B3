@@ -22,9 +22,30 @@
 <body>
     <div id="app">
         @include('components.navbar')
-        <main class="container py-4 ">
+        <main class="container-fluid">
             @yield('content')
         </main>
     </div>
+    <footer class="container-fluid">
+      <div class="row bg-secondary">
+          <div class="container pt-4 pb-4 text-light">
+            <div class="row">
+                  <div class="col">
+                      <h3>About Us</h3>
+                      <p> bla bla bla bla </p>
+                  </div>
+                  <div class="col">
+                      <h3>Get Intouch</h3>
+                      <p> bla bla bla bla </p>
+                  </div>
+                  <div class="col">
+                      <h3>Site Map</h3>
+                      <p> bla bla bla bla </p>
+                  </div>
+            </div>
+          </div>
+      </div><!-- Pick Plan Section Ends -->
+      <div></div>
+    </footer>
 </body>
 </html>
