@@ -66,8 +66,8 @@
         </div>
     </div> <!-- Price Section Ends -->
     <div class="row"><!-- FAQ Section Starts -->
-        <div class="container text-center pt-4 pb-4"> <!-- List Group inner Container -->
-          <h1>Frequently Asked Questions</h1>
+        <div class="container pt-4 pb-4"> <!-- List Group inner Container -->
+          <h1 class="text-center">Frequently Asked Questions</h1>
           <div class="row"> <!-- List Group inner Row Starts -->
               <div class="col">
                         <ul class="list-group"><!-- List Group Starts -->
@@ -78,34 +78,26 @@
                           <li class="list-group-item list-group-item-action flex-column align-items-start">
                             <div class="d-flex w-100 justify-content-between">
                               <h5 class="mb-1">List group item heading</h5>
-                              <small class="text-muted">3 days ago</small>
                             </div>
                             <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                            <small class="text-muted">Donec id elit non mi porta.</small>
                           </li>
                           <li class="list-group-item list-group-item-action flex-column align-items-start">
                             <div class="d-flex w-100 justify-content-between">
                               <h5 class="mb-1">List group item heading</h5>
-                              <small class="text-muted">3 days ago</small>
                             </div>
                             <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                            <small class="text-muted">Donec id elit non mi porta.</small>
                           </li>
                           <li class="list-group-item list-group-item-action flex-column align-items-start">
                             <div class="d-flex w-100 justify-content-between">
                               <h5 class="mb-1">List group item heading</h5>
-                              <small class="text-muted">3 days ago</small>
                             </div>
                             <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                            <small class="text-muted">Donec id elit non mi porta.</small>
                           </li>
                           <li class="list-group-item list-group-item-action flex-column align-items-start">
                             <div class="d-flex w-100 justify-content-between">
                               <h5 class="mb-1">List group item heading</h5>
-                              <small class="text-muted">3 days ago</small>
                             </div>
                             <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                            <small class="text-muted">Donec id elit non mi porta.</small>
                           </li>
                         </ul><!-- List Group Ends -->
               </div>
@@ -114,42 +106,32 @@
                         <li class="list-group-item list-group-item-action flex-column align-items-start">
                           <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">List group item heading</h5>
-                            <small class="text-muted">3 days ago</small>
                           </div>
                           <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                          <small class="text-muted">Donec id elit non mi porta.</small>
                         </li>
                         <li class="list-group-item list-group-item-action flex-column align-items-start">
                           <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">List group item heading</h5>
-                            <small class="text-muted">3 days ago</small>
                           </div>
                           <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                          <small class="text-muted">Donec id elit non mi porta.</small>
                         </li>
                         <li class="list-group-item list-group-item-action flex-column align-items-start">
                           <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">List group item heading</h5>
-                            <small class="text-muted">3 days ago</small>
                           </div>
                           <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                          <small class="text-muted">Donec id elit non mi porta.</small>
                         </li>
                         <li class="list-group-item list-group-item-action flex-column align-items-start">
                           <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">List group item heading</h5>
-                            <small class="text-muted">3 days ago</small>
                           </div>
                           <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                          <small class="text-muted">Donec id elit non mi porta.</small>
                         </li>
                         <li class="list-group-item list-group-item-action flex-column align-items-start">
                           <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">List group item heading</h5>
-                            <small class="text-muted">3 days ago</small>
                           </div>
                           <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                          <small class="text-muted">Donec id elit non mi porta.</small>
                         </li>
                       </ul><!-- List Group Ends -->
               </div>
