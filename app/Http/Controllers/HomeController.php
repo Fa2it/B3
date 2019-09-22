@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth')->only('index');
     }
 
     /**
@@ -23,6 +23,45 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('home.home');
     }
+
+    /**
+     * Show the about Page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function about()
+    {
+        return view('home.about');
+    }
+    /**
+     * Show the price  page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function product( $prod = '')
+    {
+        return view('home.product',['product'=>$prod]);
+    }
+
+    /**
+     * Show the price  page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function price( $price = '')
+    {
+        return view('home.price',['price'=>$price]);
+    }    /**
+     * Show the resource page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function resource( $resc= '')
+    {
+        return view('home.resource',['resource'=>$resc]);
+    }
+
+
 }

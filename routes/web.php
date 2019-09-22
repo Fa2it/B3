@@ -12,9 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home.welcome');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/about-us', 'HomeController@about')->name('about-us');
+Route::get('/product/{prod}', 'HomeController@product')->name('product');
+Route::get('/price/{price}', 'HomeController@price')->name('price');
+Route::get('/resource/{resc}', 'HomeController@resource')->name('resource');
