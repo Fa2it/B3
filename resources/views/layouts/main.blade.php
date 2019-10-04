@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'BB Stats') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -15,6 +15,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -22,30 +23,10 @@
 <body>
     <div id="app">
         @include('components.navbar')
-        <main class="container-fluid">
+        <main class="container-fluid min-vh-100">
             @yield('content')
         </main>
     </div>
-    <footer class="container-fluid">
-      <div class="row bg-secondary">
-          <div class="container pt-4 pb-4 text-light">
-            <div class="row">
-                  <div class="col">
-                      <h3>About Us</h3>
-                      <p> bla bla bla bla </p>
-                  </div>
-                  <div class="col">
-                      <h3>Get Intouch</h3>
-                      <p> bla bla bla bla </p>
-                  </div>
-                  <div class="col">
-                      <h3>Site Map</h3>
-                      <p> bla bla bla bla </p>
-                  </div>
-            </div>
-          </div>
-      </div><!-- Pick Plan Section Ends -->
-      <div></div>
-    </footer>
+    @include('components.footer')
 </body>
 </html>

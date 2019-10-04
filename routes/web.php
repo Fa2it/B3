@@ -20,5 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/about-us', 'HomeController@about')->name('about-us');
 Route::get('/product/{prod}', 'HomeController@product')->name('product');
-Route::get('/price/{price}', 'HomeController@price')->name('price');
+Route::get('/price/{price}', 'HomeController@priceType')->name('price-type');
+Route::get('/price', 'HomeController@price')->name('price');
 Route::get('/resource/{resc}', 'HomeController@resource')->name('resource');

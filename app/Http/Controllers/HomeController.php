@@ -50,10 +50,19 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function price( $price = '')
+    public function price()
+    {
+        return view('home.price',['price'=>""]);
+    }
+    /**
+     * Show the price  page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function priceType( $price = '')
     {
         return view('home.price',['price'=>$price]);
-    }    /**
+    }       /**
      * Show the resource page.
      *
      * @return \Illuminate\Contracts\Support\Renderable

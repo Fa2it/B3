@@ -1,4 +1,4 @@
-<form class="form-inline mt-5">
+<form class="form-inline mt-5 mb-5">
   <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
   <div class="input-group mb-2 mr-sm-2">
     <div class="input-group-prepend">
@@ -16,5 +16,5 @@
     <input type="text" class="form-control" id="inlineFormInputGroupUsername2" size="50" placeholder="enter #Hastag keyword to generate Report">
 
   </div>
-  <button type="submit" class="btn btn-primary mb-2">Generate Insight</button>
+  <button type="submit" class="btn btn-secondary mb-2">Generate Insight</button>
 </form>
