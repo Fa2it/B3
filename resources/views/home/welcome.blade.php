@@ -4,7 +4,8 @@
 <div class="row bg-primary">
     <div class="container">
       <div class="w-75 mx-auto">
-      <h2 class="mt-3 text-white">Increase your success rate and gain market understandings</h2>
+      <h2 class="mt-5 font-weight-bold text-white">Increase your success rate and gain market understandings</h2>
+        <p class="d-flex justify-content-center font-weight-bold text-white"><< About What your Customers are talking >></p>
             @include('components.searchform')
       </div>
     </div>
