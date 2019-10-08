@@ -23,9 +23,10 @@
                     <li><i class="fab fa-facebook-square"></i></i> &nbsp; <a title="Facebook - Hashtagify.me" href="https://www.facebook.com/Hashtagify.me/" data-goal="facebook_at_hashtagify">Hashtagify.me</a></li>
                   </ul>
                   <h3>Follow Us </h3>
+                  <hr class="m-1">
                   <div>
-                    <i class="fab fa-twitter-square" style="font-size:2rem"></i>
-                    <i class="fab fa-facebook-square ml-1" style="font-size:2rem"></i>
+                    <img src="https://d2bsn9sp5cxln0.cloudfront.net/assets/logo/social-facebook-logo-50f9a4a6e96917ee937b51bc600b1fad.png" alt="facebook logo" width="30" height="30" class="mr-2">
+                    <img alt="Twitter - @hashtagify" src="https://d2bsn9sp5cxln0.cloudfront.net/assets/logo/social-twitter-logo-e37ecfcfd5470819132ded154f44b6d6.png" width="30" height="30">
                   </div>
               </div>
               <div class="col">
