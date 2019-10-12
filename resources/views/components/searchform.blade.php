@@ -1,4 +1,4 @@
-<div class="w-100 mb-5 mt-5">&nbsp</div>
+<div class="w-100 mb-2 mt-3">&nbsp</div>
 <form class="form-inline mt-5 mb-3 justify-content-center">
   <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
   <div class="input-group mb-2 mr-sm-2">
@@ -19,6 +19,6 @@
   </div>
   <button type="submit" class="btn btn-secondary mb-2">Generate Insight</button>
 </form>
-<div class="mt-1 mb-5">
+<div class="mt-1 mb-5 d-flex justify-content-center">
   <span class="font-weight-bold">Recent Searches</span> : <span class="badge badge-secondary">#123</span> <span class="badge badge-secondary">#abc</span> <span class="badge badge-secondary">sex</span>
 </div>

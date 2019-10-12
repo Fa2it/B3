@@ -22,6 +22,7 @@ window.d3 = require('d3');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('horizontal-bar-chart', require('./components/HorizontalBarChart.vue').default);
+Vue.component('page-corsor-component', require('./components/PageCorsorComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

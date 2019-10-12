@@ -79,7 +79,9 @@
       </div>
   </div>
 </footer>
+<script src="{{ asset('js/jquery-3.4.1.min.js') }}" data-cfasync="false"></script>
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script src="{{ asset('js/pagescroll.js') }}"></script>
 <script>
 window.cookieconsent.initialise({
   "palette": {
