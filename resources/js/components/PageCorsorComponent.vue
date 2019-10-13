@@ -13,20 +13,19 @@
                 // Any code to be executed when the window is scrolled
                 event.target.parentNode.parentNode.parentNode.style.visibility = 'hidden';
                 event.target.parentNode.parentNode.parentNode.style.height = '0';
-                event.target.parentNode.parentNode.parentNode.style.WebkitTransition = 'height 2s';
-                event.target.parentNode.parentNode.parentNode.style.transition = 'height 2s';
+                event.target.parentNode.parentNode.parentNode.style.WebkitTransition = 'height 1s';
+                event.target.parentNode.parentNode.parentNode.style.transition = 'height 1s';
                 var hoso = document.getElementById('hide-on-scroll-one')
                 var hosoh = document.getElementById('hide-on-scroll-oneh')
-
-                    hoso.style.height="0";
-                    hoso.style.visibility = 'hidden';
-                    hoso.style.WebkitTransition = 'height 2s';
-                    hoso.style.transition = 'height 2s';
 
                     hosoh.style.fontSize="2rem";
                     hosoh.style.WebkitTransition = 'fontSize 3s';
                     hosoh.style.transition = 'fontSize 3s';
-                    console.log( "Scrolling ..... " )
+
+                    hoso.style.height="0";
+                    hoso.style.visibility = 'hidden';
+                    hoso.style.WebkitTransition = 'height 1s';
+                    hoso.style.transition = 'height 1s';
               },
               created () {
                 console.log("created ....")
