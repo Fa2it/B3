@@ -1984,12 +1984,13 @@ __webpack_require__.r(__webpack_exports__);
       event.target.parentNode.parentNode.parentNode.style.transition = 'height 2s';
       var hoso = document.getElementById('hide-on-scroll-one');
       var hosoh = document.getElementById('hide-on-scroll-oneh');
-      hoso.style.height = "4rem";
+      hoso.style.height = "0";
+      hoso.style.visibility = 'hidden';
       hoso.style.WebkitTransition = 'height 2s';
       hoso.style.transition = 'height 2s';
       hosoh.style.fontSize = "2rem";
-      hosoh.style.WebkitTransition = 'fontSize 2s';
-      hosoh.style.transition = 'fontSize 2s';
+      hosoh.style.WebkitTransition = 'fontSize 3s';
+      hosoh.style.transition = 'fontSize 3s';
       console.log("Scrolling ..... ");
     },
     created: function created() {
@@ -67187,12 +67188,7 @@ var render = function() {
         height: "3rem"
       },
       attrs: { id: "page-scroll-reduce" },
-      on: { click: _vm.handleScroll },
-      nativeOn: {
-        scroll: function($event) {
-          return _vm.handleScroll($event)
-        }
-      }
+      on: { click: _vm.handleScroll }
     },
     [_vm._m(0)]
   )
