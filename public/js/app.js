@@ -1979,10 +1979,11 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     handleScroll: function handleScroll(event) {
       // Any code to be executed when the window is scrolled
-      event.target.parentNode.parentNode.parentNode.style.visibility = 'hidden';
-      event.target.parentNode.parentNode.parentNode.style.height = '0';
-      event.target.parentNode.parentNode.parentNode.style.WebkitTransition = 'height 1s';
-      event.target.parentNode.parentNode.parentNode.style.transition = 'height 1s';
+      var pagescrollreduce = document.getElementById('page-scroll-reduce');
+      pagescrollreduce.parentNode.style.visibility = 'hidden';
+      pagescrollreduce.parentNode.style.height = '0';
+      pagescrollreduce.parentNode.style.WebkitTransition = 'height 1s';
+      pagescrollreduce.parentNode.style.transition = 'height 1s';
       var hoso = document.getElementById('hide-on-scroll-one');
       var hosoh = document.getElementById('hide-on-scroll-oneh');
       hosoh.style.fontSize = "2rem";
@@ -1993,15 +1994,14 @@ __webpack_require__.r(__webpack_exports__);
       hoso.style.WebkitTransition = 'height 1s';
       hoso.style.transition = 'height 1s';
     },
-    created: function created() {
-      console.log("created ....");
-      window.addEventListener('scroll', this.handleScroll);
-    },
+    created: function created() {},
     destroyed: function destroyed() {
-      window.removeEventListener('scroll', this.handleScroll);
+      window.removeEventListener('scroll', this.handleScroll2);
     }
   },
-  mounted: function mounted() {}
+  mounted: function mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
 });
 
 /***/ }),
