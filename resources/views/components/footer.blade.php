@@ -1,4 +1,4 @@
-<footer class="container-fluid">
+<footer class="container-fluid mt-4">
   <div class="row bg-secondary">
       <div class="container pt-4 pb-4 text-light">
         <div class="row">
@@ -83,6 +83,12 @@
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 <script src="{{ asset('js/pagescroll.js') }}"></script>
 <script>
+$("#page-scroll-reduce").click(function(){
+      $(this).hide();
+      $("#hide-on-scroll-two").hide( 3000, function(){
+        $(this).remove();
+      });
+});
 window.cookieconsent.initialise({
   "palette": {
     "popup": {

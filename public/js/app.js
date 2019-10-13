@@ -1970,15 +1970,37 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   methods: {
-    pageReduced: function pageReduced() {
-      console.log("click");
+    handleScroll: function handleScroll(event) {
+      // Any code to be executed when the window is scrolled
+      event.target.parentNode.parentNode.parentNode.style.visibility = 'hidden';
+      event.target.parentNode.parentNode.parentNode.style.height = '0';
+      event.target.parentNode.parentNode.parentNode.style.WebkitTransition = 'height 2s';
+      event.target.parentNode.parentNode.parentNode.style.transition = 'height 2s';
+      var hoso = document.getElementById('hide-on-scroll-one');
+      var hosoh = document.getElementById('hide-on-scroll-oneh');
+      hoso.style.height = "4rem";
+      hoso.style.WebkitTransition = 'height 2s';
+      hoso.style.transition = 'height 2s';
+      hosoh.style.fontSize = "2rem";
+      hosoh.style.WebkitTransition = 'fontSize 2s';
+      hosoh.style.transition = 'fontSize 2s';
+      console.log("Scrolling ..... ");
+    },
+    created: function created() {
+      console.log("created ....");
+      window.addEventListener('scroll', this.handleScroll);
+    },
+    destroyed: function destroyed() {
+      window.removeEventListener('scroll', this.handleScroll);
     }
   },
-  mounted: function mounted() {
-    console.log('Component mounted.');
-  }
+  mounted: function mounted() {}
 });
 
 /***/ }),
@@ -67153,9 +67175,41 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c(
+    "div",
+    {
+      staticClass: "mx-auto",
+      staticStyle: {
+        "border-radius": "50%",
+        border: "2px solid #FFF",
+        cursor: "pointer",
+        width: "3rem",
+        height: "3rem"
+      },
+      attrs: { id: "page-scroll-reduce" },
+      on: { click: _vm.handleScroll },
+      nativeOn: {
+        scroll: function($event) {
+          return _vm.handleScroll($event)
+        }
+      }
+    },
+    [_vm._m(0)]
+  )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "d-flex justify-content-center" }, [
+      _c("i", {
+        staticClass: "fas fa-angle-down",
+        staticStyle: { "font-size": "3rem", color: "#FFF" }
+      })
+    ])
+  }
+]
 render._withStripped = true
 
 
