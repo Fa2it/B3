@@ -21,8 +21,8 @@ window.d3 = require('d3');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('horizontal-bar-chart', require('./components/HorizontalBarChart.vue').default);
-Vue.component('page-corsor-component', require('./components/PageCorsorComponent.vue').default);
+Vue.component('horizontal-bar-chart', require('./components/homepage/HorizontalBarChart.vue').default);
+Vue.component('page-corsor-component', require('./components/homepage/PageCorsorComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
