@@ -1,12 +1,12 @@
 <template>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-4">
+            <!--<div class="col-md-4">
                 <div class="card">
                     <div class="card-header">Vertical Bar Chart</div>
                     <svg class="vbarchart"></svg>
                 </div>
-            </div>
+            </div> -->
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">Horizontal Bar Chart</div>
@@ -71,7 +71,7 @@
                       .attr("x", 50)
                       .attr("y", 50)
                       .attr("font-size", "24px")
-                      .text("Foods Price")
+                      .text("Popularity")
 
                    var xScale = d3.scaleBand().range([0, width]).padding(0.4),
                        yScale = d3.scaleLinear().range([height, 0]);
@@ -94,7 +94,8 @@
 
                        g.append("g")
                         .call(d3.axisLeft(yScale).tickFormat(function(d){
-                            return "$" + d;
+                            // return "$" + d;
+                            return d;
                         })
                         .ticks(10))
                         .append("text")
@@ -103,7 +104,7 @@
                         .attr("dy", "-5.1em")
                         .attr("text-anchor", "end")
                         .attr("stroke", "black")
-                        .text("Stock Price");
+                        .text("#Tag Number");
 
                        g.selectAll(".bar")
                         .data(data)
@@ -122,7 +123,7 @@
             var that = this;
             d3.json('/api/pictures').then(function(data) {
               that.data = data;
-                    that.verticalBarChart(data);
+                    // that.verticalBarChart(data);
                     that.horizontalBarChart(data);
                 });
 
