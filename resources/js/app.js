@@ -8,6 +8,7 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 window.d3 = require('d3');
+window.chart = require('chart.js');
 
 /**
  * The following block of code may be used to automatically register your
@@ -22,7 +23,10 @@ window.d3 = require('d3');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('horizontal-bar-chart', require('./components/homepage/HorizontalBarChart.vue').default);
+Vue.component('homepage-popularity-analysis', require('./components/homepage/HomePagePopularityAnalysisComponent.vue').default);
 Vue.component('page-corsor-component', require('./components/homepage/PageCorsorComponent.vue').default);
+Vue.component('welcome-corsor-component', require('./components/homepage/PageCorsorComponent.vue').default);
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
