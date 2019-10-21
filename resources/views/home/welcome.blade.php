@@ -7,7 +7,7 @@
 </div>
 <!-- KPI section -->
 <div class="row mt-5">
-    @include('home.sections.welcome.kpis')
+    <welcome-kpis-component></welcome-kpis-component>
 </div>
 <!-- Inside section -->
 <div class="row mt-5">
@@ -15,6 +15,6 @@
 </div>
 <!-- Popularity-Trend time series section -->
 <div class="row mt-5">
-    @include('home.sections.welcome.polularitytrend')
+    <welcome-trend-map-component></welcome-trend-map-component>
 </div>
 @endsection

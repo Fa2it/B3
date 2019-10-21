@@ -38,6 +38,4 @@
         <h2>Strategify and Win your Customers</h2>
       </div>
   </div>
-
-
 </div>

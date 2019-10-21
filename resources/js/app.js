@@ -7,7 +7,7 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-window.d3 = require('d3');
+// window.d3 = require('d3');
 window.chart = require('chart.js');
 
 /**
@@ -26,6 +26,8 @@ Vue.component('horizontal-bar-chart', require('./components/homepage/HorizontalB
 Vue.component('homepage-popularity-analysis', require('./components/homepage/HomePagePopularityAnalysisComponent.vue').default);
 Vue.component('page-corsor-component', require('./components/homepage/PageCorsorComponent.vue').default);
 Vue.component('welcome-corsor-component', require('./components/homepage/PageCorsorComponent.vue').default);
+Vue.component('welcome-trend-map-component', require('./components/welcome/TrendMapComponent.vue').default);
+Vue.component('welcome-kpis-component', require('./components/welcome/KpiAnalysisComponent.vue').default);
 
 
 /**
