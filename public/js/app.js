@@ -2095,16 +2095,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2121,7 +2111,7 @@ __webpack_require__.r(__webpack_exports__);
       data: {
         labels: ["Africa", "Asia", "Europe", "Latin America"],
         datasets: [{
-          label: "Population (millions)",
+          label: "Daily Popularity Chart",
           backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9"],
           data: [2478, 5267, 734, 784]
         }]
@@ -2129,49 +2119,55 @@ __webpack_require__.r(__webpack_exports__);
       options: {
         title: {
           display: true,
-          text: 'Predicted world population (millions) in 2050'
-        }
-      }
-    }); // Others
-
-    new Chart(document.getElementById("bar-chart-horizontal"), {
-      type: 'horizontalBar',
-      data: {
-        labels: ["Africa", "Asia", "Europe", "Latin America"],
-        datasets: [{
-          label: "Population (millions)",
-          backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9"],
-          data: [2478, 5267, 734, 784]
-        }]
-      },
-      options: {
-        legend: {
-          display: false
+          text: 'Daily Popularity Chart'
         },
-        title: {
-          display: true,
-          text: 'Predicted world population (millions) in 2050'
-        }
-      }
-    }); // HorizontalBarChart
-
-    new Chart(document.getElementById("doughnut-chart"), {
-      type: 'doughnut',
-      data: {
-        labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
-        datasets: [{
-          label: "Population (millions)",
-          backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-          data: [2478, 5267, 734, 784, 433]
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-          text: 'Predicted world population (millions) in 2050'
+        legend: {
+          position: 'right'
         }
       }
     });
+    /*
+    new Chart(document.getElementById("bar-chart-horizontal"), {
+        type: 'horizontalBar',
+        data: {
+          labels: ["Africa", "Asia", "Europe", "Latin America"],
+          datasets: [
+            {
+              label: "Trend Chart",
+              backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9"],
+              data: [2478,5267,734,784]
+            }
+          ]
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'Trend Chart'
+          }
+        }
+    });
+    // HorizontalBarChart
+    new Chart(document.getElementById("doughnut-chart"), {
+        type: 'doughnut',
+        data: {
+          labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+          datasets: [
+            {
+              label: "Centiment Chart",
+              backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+              data: [2478,5267,734,784,433]
+            }
+          ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'Centiment Chart'
+          }
+        }
+    });
+     */
   }
 });
 
@@ -2197,9 +2193,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2210,42 +2203,21 @@ __webpack_require__.r(__webpack_exports__);
     /******************************************************************************/
   },
   mounted: function mounted() {
-    new Chart(document.getElementById("trend-mixed-chart"), {
-      type: 'bar',
+    new Chart(document.getElementById("line-chart"), {
+      type: 'line',
       data: {
-        labels: ["1900", "1950", "1999", "2050"],
+        labels: [1500, 1600, 1700, 1750, 1800, 1850, 1900, 1950, 1999, 2050],
         datasets: [{
-          label: "Europe",
-          type: "line",
-          borderColor: "#8e5ea2",
-          data: [408, 547, 675, 734],
-          fill: false
-        }, {
-          label: "Africa",
-          type: "line",
+          data: [2120, 2100, 1780, 1988, 2178, 1800, 1900, 1708, 1798, 1780],
+          label: "#Donald Trump",
           borderColor: "#3e95cd",
-          data: [133, 221, 783, 2478],
           fill: false
-        }, {
-          label: "Europe",
-          type: "bar",
-          backgroundColor: "rgba(0,0,0,0.2)",
-          data: [408, 547, 675, 734]
-        }, {
-          label: "Africa",
-          type: "bar",
-          backgroundColor: "rgba(0,0,0,0.2)",
-          backgroundColorHover: "#3e95cd",
-          data: [133, 221, 783, 2478]
         }]
       },
       options: {
         title: {
           display: true,
-          text: 'Population growth (millions): Europe & Africa'
-        },
-        legend: {
-          display: false
+          text: 'Tweeter Counts'
         }
       }
     });
@@ -70672,33 +70644,11 @@ var staticRenderFns = [
       _c("h2", [_vm._v("KPIs")]),
       _vm._v(" "),
       _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          { staticClass: "col border", staticStyle: { height: "200px" } },
-          [
-            _vm._v("\n            Daily Popularity Chart\n            "),
-            _c("canvas", { attrs: { id: "pie-chart" } }),
-            _vm._v("\n            daily\n        ")
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col border", staticStyle: { height: "200px" } },
-          [
-            _vm._v("\n          Trend Chart\n          "),
-            _c("canvas", { attrs: { id: "bar-chart-horizontal" } })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col border", staticStyle: { height: "200px" } },
-          [
-            _vm._v("\n          Centiment Chart\n          "),
-            _c("canvas", { attrs: { id: "doughnut-chart" } })
-          ]
-        )
+        _c("div", { staticClass: "col-4 offset-4" }, [
+          _c("canvas", {
+            attrs: { id: "pie-chart", height: "100", width: "100" }
+          })
+        ])
       ])
     ])
   }
@@ -70735,20 +70685,14 @@ var staticRenderFns = [
       _c("div", { staticClass: "row" }, [
         _c(
           "div",
-          { staticClass: "col-8", staticStyle: { "min-height": "200px" } },
+          { staticClass: "col", staticStyle: { "min-height": "200px" } },
           [
             _c("h2", [_vm._v("Trend Map")]),
             _vm._v(" "),
             _c("canvas", {
-              attrs: { id: "trend-mixed-chart", width: "800", height: "450" }
+              attrs: { id: "line-chart", width: "800", height: "450" }
             })
           ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-4", staticStyle: { "min-height": "200px" } },
-          [_c("h2", [_vm._v("World Clouds")])]
         )
       ])
     ])

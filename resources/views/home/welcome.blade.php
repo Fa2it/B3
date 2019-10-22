@@ -9,12 +9,12 @@
 <div class="row mt-5">
     <welcome-kpis-component></welcome-kpis-component>
 </div>
-<!-- Inside section -->
-<div class="row mt-5">
-    @include('home.sections.welcome.insides')
-</div>
 <!-- Popularity-Trend time series section -->
 <div class="row mt-5">
     <welcome-trend-map-component></welcome-trend-map-component>
+</div>
+<!-- Inside section -->
+<div class="row mt-5">
+    @include('home.sections.welcome.insides')
 </div>
 @endsection

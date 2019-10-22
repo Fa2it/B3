@@ -1,12 +1,9 @@
 <template>
   <div class="container border">
     <div class="row">
-        <div class="col-8" style="min-height:200px">
+        <div class="col" style="min-height:200px">
           <h2>Trend Map</h2>
-          <canvas id="trend-mixed-chart" width="800" height="450"></canvas>
-        </div>
-        <div class="col-4" style="min-height:200px">
-            <h2>World Clouds</h2>
+          <canvas id="line-chart" width="800" height="450"></canvas>
         </div>
     </div>
   </div>
@@ -24,44 +21,25 @@
 /******************************************************************************/
       },
       mounted() {
-        new Chart(document.getElementById("trend-mixed-chart"), {
-            type: 'bar',
-            data: {
-              labels: ["1900", "1950", "1999", "2050"],
-              datasets: [{
-                  label: "Europe",
-                  type: "line",
-                  borderColor: "#8e5ea2",
-                  data: [408,547,675,734],
-                  fill: false
-                }, {
-                  label: "Africa",
-                  type: "line",
-                  borderColor: "#3e95cd",
-                  data: [133,221,783,2478],
-                  fill: false
-                }, {
-                  label: "Europe",
-                  type: "bar",
-                  backgroundColor: "rgba(0,0,0,0.2)",
-                  data: [408,547,675,734],
-                }, {
-                  label: "Africa",
-                  type: "bar",
-                  backgroundColor: "rgba(0,0,0,0.2)",
-                  backgroundColorHover: "#3e95cd",
-                  data: [133,221,783,2478]
+        new Chart(document.getElementById("line-chart"), {
+                type: 'line',
+                data: {
+                  labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
+                  datasets: [{
+                      data: [2120,2100,1780,1988,2178,1800,1900,1708,1798,1780],
+                      label: "#Donald Trump",
+                      borderColor: "#3e95cd",
+                      fill: false
+                    }
+                  ]
+                },
+                options: {
+                  title: {
+                    display: true,
+                    text: 'Tweeter Counts'
+                  }
                 }
-              ]
-            },
-            options: {
-              title: {
-                display: true,
-                text: 'Population growth (millions): Europe & Africa'
-              },
-              legend: { display: false }
-            }
-        });
+              });
 
         }
     }
