@@ -70690,7 +70690,7 @@ var staticRenderFns = [
             _c("h2", [_vm._v("Trend Map")]),
             _vm._v(" "),
             _c("canvas", {
-              attrs: { id: "line-chart", width: "800", height: "450" }
+              attrs: { id: "line-chart", width: "800", height: "300" }
             })
           ]
         )

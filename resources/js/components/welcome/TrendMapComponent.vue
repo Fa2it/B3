@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col" style="min-height:200px">
           <h2>Trend Map</h2>
-          <canvas id="line-chart" width="800" height="450"></canvas>
+          <canvas id="line-chart" width="800" height="300"></canvas>
         </div>
     </div>
   </div>

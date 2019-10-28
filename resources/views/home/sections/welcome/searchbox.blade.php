@@ -8,6 +8,6 @@
         @include('components.searchform')
   </div>
 </div>
-<div class="container d-flex align-items-end" style="height:22rem" id="hide-on-scroll-two">
+<div class="container d-flex align-items-end mb-2" style="height:20rem" id="hide-on-scroll-two">
     <page-corsor-component></page-corsor-component>
 </div>

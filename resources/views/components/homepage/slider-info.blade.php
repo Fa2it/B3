@@ -1,4 +1,4 @@
-<div class="container-slider blur rounded border border-light">
+<div class="container-slider blur" style="font-size: xx-large;">
     <ul class="slider">
       <li class="mb-3">About your Customers </li>
       <li class="mb-3">About your Competitors </li>
