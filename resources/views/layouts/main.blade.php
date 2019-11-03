@@ -30,5 +30,6 @@
         </main>
     </div>
     @include('components.footer')
+    @stack('script_ad_per_page')
 </body>
 </html>

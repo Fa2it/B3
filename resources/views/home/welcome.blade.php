@@ -1,55 +1,15 @@
 @extends('layouts.main')
 @push('styles_ad_css')
 <style>
-.container-slider {
-      width: 25em;
-      height: 2em;
-      margin: 0.5em auto;
-      overflow: hidden;
-      position: relative;
-    }
-    .slider {
-        top: 1em;
-        position: relative;
-        box-sizing: border-box;
-        animation: slider 30s linear infinite;
-        list-style-type: none;
-        text-align: center;
-        color: black;
-    }
-
-
-    @keyframes slider {
-        0%   { top:   10em }
-        100% { top: -14em }
-    }
-
-    .blur .slider {
-        margin: 0;
-        padding: 0 1em;
-        line-height: 1.5em;
-    }
-
-    .blur:before, .blur::before,
-    .blur:after,  .blur::after {
-        left: 0;
-        z-index: 1;
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2em;
-    }
-
-    .blur:after, .blur::after {
-        bottom: 0;
-        transform: rotate(180deg);
-    }
-
-    .blur:before, .blur::before {
-        top: 0;
-    }
+#scroll-text {
+   -webkit-transition: opacity 1s ease-in-out;
+   -moz-transition: opacity 1s ease-in-out;
+   -ms-transition: opacity 1s ease-in-out;
+   -o-transition: opacity 1s ease-in-out;
+   transition: opacity 1s ease-in-out;
+}
 </style>
-@endpush
+
 
 @section('content')
 <!-- Blue searchbox section -->
@@ -70,3 +30,41 @@
 
 </div>
 @endsection
+
+@push('script_ad_per_page')
+<script>
+  //alert("Added");
+  document.addEventListener("DOMContentLoaded", function(event) {
+  //do work
+  var counter = 0;
+  var scrolltest = document.getElementById('scroll-text');
+  setInterval(scrollText, 5000)
+
+  function scrollText(){
+      var  display_texts=[
+                      'About your Customers',
+                      'About your Competitors',
+                      'On how to Boost your PR strategy',
+                      'On how to Optimized your Digital Effectiveness',
+                      'On how to make the right strategic decission',
+                      'Info trends as they happend',
+                      'Monitor your campaign, keyboard, hashtag',
+                      'Of the various communities within your customer base',
+                      'On how guage sentiment',
+                      'Win your market'
+                    ];
+      scrolltest.innerHTML =  display_texts[counter];
+      scrolltest.style.opacity = 0;
+      scrolltest.style.opacity = 1;
+
+
+      counter++
+      if(counter == display_texts.length )
+          counter =0;
+  }
+
+
+});
+
+</script>
+@endpush
